@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<Config>
+  <RecOneImageTime>100</RecOneImageTime>
+  <DelayScrollImage>1000</DelayScrollImage>
+  <MagZoomRate>0.1</MagZoomRate>
+  <MaxZoomRate>5</MaxZoomRate>
+  <MinZoomRate>1</MinZoomRate>
+  <IntegrateTimeInterval>300</IntegrateTimeInterval>
+  <MinWaitingTime>1000</MinWaitingTime>
+  <MaxErrorCount>3</MaxErrorCount>
+</Config>
