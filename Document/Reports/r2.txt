@@ -1,0 +1,96 @@
+Linh .
+1.Development Environmene :
+	+ Operating system: Windows 7 / Windows Server
+	+ Web server : IIS 7 	
+	+ Framework : .Net Framework 4.0:
+	+ IDE: Visual Studio 2010
+	+ DBMS: SQL Server 2008 R1
+	+ Source control : Google Code[Ghi so , cuoi them reference]
+2.Hardware environment :
+Required (minimum) Specs
+Clients : 
+	Cpu : Intel(R) Pentium(R) 4 2.0 GHz or better supported
+	Ram : 512MB RAM (1GB for Windows Vista/ Windows 7)
+	Hard Disk: 50GB of free space
+Server : 
+	Cpu : Intel(R) Core 2 Duo(R) 2.4 GHz or better supported
+	Ram : 4GB
+	Hard Disk: 100GB of free space
+Recommended Specs 
+Clients : 
+	Cpu : Intel(R) Core 2 Duo(R) 2.0 GHz or better supported
+	Ram : 2GB RAM
+ 	Hard Disk: 100GB of free space
+Server : 
+	Cpu : Intel(R) Core 2 Duo(R) 3.0 GHz or better supported
+	Ram : 4GB
+	Hard Disk: 100GB of free space	
+3. Tools and Techniques
+.Net Framework 4.0
+Visual studio 2010 
+MSQL Server 2008 sp1 
+Design tool : photoshop CS5
+UML tools : enterprise architect 9
+Document tools : Microsoft Office 2007 . 
+Test tools : NUnit 
+
+4.Risk : 
+People Risk : 
+	4.1
+	Team members contradict each other 
+	High 
+	Serious 
+	To chuc cac cuoc noi chuyen , team building de moi nguoi hieu nhau hon , Kiem tra lai
+	goc re~ cua van de va giai quyet chung , Lam cho moi nguoi hieu va huong toi muc dich
+	chung cua nhom la 1 do an thanh cong .
+
+	4.2
+	Communicator : do khong lam viec cung 1 noi co the goi la visual team .
+	High	
+	Serious
+	To chuc cac buoi lam viec offline , video conference moi toi khi cac thanh vien co van 
+	de can giai quyet .
+	
+	4.3
+	khong co ky nang lam viec nhom , dung nhieu ky thuat moi nen moi nguoi khong thong thao 
+	High	
+	Serious
+	to chuc cac buoi training de technical lead training cho team members . Assigned tasks clearly ,
+	open talk, team building . Thong nhat voi ca team ve much dich cua do an .
+	4.4
+	Team co nhieu nguoi dang lam viec o cac cong ty ben ngoai , do vay thoi gian danh cho do an khong
+	nhieu 
+	High
+	Serious
+	To chuc 1 buoi meeting de remind lai van de quan trong nhat bay gio la do an . Thong nhat so thoi
+	gian trong ngay danh cho do an  va dat rule de phat khi cham task or di muon khi co meeting .
+Requirement Risk :
+	4.5 
+	Thay doi requirement thuong xuyen , dan den kho khan cho viec design database 
+	High	
+	Serious
+	Tim hieu ro nhung thong tin can thiet cho viec design database va thong nhat voi ca team
+	tranh viec rework .
+	4.6 
+	Do phat trien tu y tuong ban dau , requirement den tu tat ca cac thanh vien , de conflict nhau
+	High 
+	Serious
+	To chu 1 buoi meeting de moi nguoi co the dua ra va bao ve y kien cua minh theo , nhung nguoi 
+	khac se phan bac lai y kien day . Sau buoi hop pm se thong nhat va dua ra ban draff requirement 
+	bao gom function , non-function , and domain
+Schedule risk 
+	4.7
+	Khong co kinh nghiem ve viec estimate , dan den giao task thuong it thoi gian hoac thua thoi gian 
+	so voi do kho cua task , va khong uoc luong duoc thoi gian development
+	Moderate
+	Tolerable 
+	Nho su giup do cua supervisor , Rule yeu cau thong bao tien do khi qua 1 nua thoi gian giao task 
+	de co the biet duoc tinh hinh cong viec . 
+Estimate risk 
+	4.8 
+	Khong co kinh nghiem ve estimate , dan den viec khong the estimate duoc size of project 
+	High
+	Serious
+	Chia nho thanh cac phase , hoan thien moi phase dung deadline . Tracking tien do cua cac member thuong 
+	xuyen .
+5.project success Criteria
