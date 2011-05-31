@@ -1,0 +1,36 @@
+Web quan ly thu phi.
+
+admin requirement:
+- Thong tin account: ma so nhan vien, ten, user name, password, full name, chuc vu, dia chi,sdt. 
+- Account gom co 2 loai la admin va user(nhan vien tram thu phi)
+- admin co the Tao account admin, nhung ko dc sua xoa'.
+- admin co the tao,xoa account user thuong.
+- Co the dat bang gia thu phi,(cu the la moi loai xe co mot bieu gia rieng,)
+- xem report ve doanh thu(cu the report refer den phan tiep theo)
+- export bao cao'.
+
+user requirement:
+- co the edit password, dia chi nha o, so dt nhung ko dc edit cac thong tin con lai.Truong hop quen password thi 
+contact admin de reset password.
+- co the xem thong tin acccount cua minh
+- co the add thong tin thu phi cua mot phuong tien giao thong bao gom: BKS, start date,end date cua thong tin ve'
+ nhung khong dc edit hay delete
+- in hoa don mua ve cho chu phuong tien.
+
+report requirement:
+- bao cao doanh thu cua tram:gom cac thong tin: so luot xe qua tram cho tung loai xe.
+Doanh thu theo so luot xe qua tram cho tung loai xe.Thong tin tong doanh thu. Report theo thon tin khoang thoi gian ma
+ user muon xem.
+
+application Nhan dang bien so:
+- USer start he thong. dang nhap vao he thong bang account (quan ly trong phan web phia tren)
+- man hinh chinh gom co phan hien thi camera,phan hien thi anh? cua phuong tien vua dc chup,
+ phai ben phai hien thi thong tin bao gom: MSNV, ngay gio chup anh?, thong tin bien so vua nhan dang.
+- PHan duoi hien thi thong tin xe:Chu xe,dia chi,so CMT,BKS,Nhan hieu,loai xe,mau xe,dung tich,chieu dai, tai trong,
+tu trong,cao, rong,so cho (neu la xe cho nguoi),trang thai (ve thang or ngay), so tien(neu ve thanh thi la 0d).
+- co chu nang thong tin tro giup huong dan cu the cho cac buoc xu ly.
+- Truong hop nhan dang bien vs get thong tin bien so xe thanh cong, thi user ko co quyen thay doi thong tin
+- truong hop ngoai le (ko nhan dang dc bien so) thi user se tu nhap bien so bang tay roi in ve'.
+- truong hop khong tim thay BKS hoac xe chua dang ky', user tu nhap thong tin loai xe de in ve phu hop.
+- user view thong tin luot xe qua tram den thoi diem hien tai trong ngay.
+- view thong tin danh sach cac xe qua tram trong ngay`
