@@ -1,0 +1,45 @@
+User 
+
+Username PK
+Password
+Fullname
+Email
+Address
+Phone
+
+
+Car
+
+BKS    PK
+Chu xe
+Dia chi
+So CMT
+NHan Hieu
+Loai xe 
+Mau xe
+Dung tich xi lanh
+chieu dai
+Chieu rong 
+Chieu cao
+Tai trong
+Tu trong
+So cho
+
+Ve thang
+
+BKS PK
+Start Date
+End Date
+
+
+Record
+BKS
+Tram thu phi
+Lan xe
+Thoi gian
+Nguoi thu
+
+BANG GIA
+
+dssLoai xe
+Gia tien
