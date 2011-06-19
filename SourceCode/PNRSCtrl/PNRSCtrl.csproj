@@ -51,6 +51,9 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PlaceNumberInfoDispCtrl">
+      <HintPath>..\PlateNumberInfoDispCtrl\obj\Debug\PlaceNumberInfoDispCtrl.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +64,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="VideoDisplayCtrl">
+      <HintPath>..\VideoDisplayCtrl\obj\Debug\VideoDisplayCtrl.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\ErrorID.cs" />
