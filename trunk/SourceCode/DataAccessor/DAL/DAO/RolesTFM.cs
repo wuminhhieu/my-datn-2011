@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+
+using TFM.DAL.Base;
+using TFM.DAL.Utils;
+
+namespace TFM.DAL
+{
+	public class RolesTFM : RolesTFMBase
+	{
+		#region Constructors
+
+		public RolesTFM()
+			: base(Constants.CONNECTION_STRING_NAME)
+		{
+		}
+
+		#endregion
+
+		#region Methods
+
+
+		#endregion
+	}
+}

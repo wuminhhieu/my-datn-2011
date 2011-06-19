@@ -1,0 +1,2 @@
+C:\Users\tovanquan\Desktop\DemoScreen\DemoScreen\DemoScreen\obj\x86\Debug\DemoScreen.exe
+C:\Users\tovanquan\Desktop\DemoScreen\DemoScreen\DemoScreen\obj\x86\Debug\DemoScreen.pdb

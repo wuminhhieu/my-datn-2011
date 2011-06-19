@@ -1,0 +1,9 @@
+E:\DATN\source\SourceCode\BIZ\bin\Debug\BIZ.dll
+E:\DATN\source\SourceCode\BIZ\bin\Debug\BIZ.pdb
+E:\DATN\source\SourceCode\BIZ\bin\Debug\Common.dll
+E:\DATN\source\SourceCode\BIZ\bin\Debug\DAL.dll
+E:\DATN\source\SourceCode\BIZ\bin\Debug\Common.pdb
+E:\DATN\source\SourceCode\BIZ\bin\Debug\DAL.pdb
+E:\DATN\source\SourceCode\BIZ\obj\Debug\ResolveAssemblyReference.cache
+E:\DATN\source\SourceCode\BIZ\obj\Debug\BIZ.dll
+E:\DATN\source\SourceCode\BIZ\obj\Debug\BIZ.pdb

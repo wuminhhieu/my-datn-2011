@@ -1,0 +1,10 @@
+C:\Documents and Settings\QuanTV1\Desktop\DemoScreen\DemoScreen\DemoScreen\bin\Debug\DemoScreen.exe
+C:\Documents and Settings\QuanTV1\Desktop\DemoScreen\DemoScreen\DemoScreen\bin\Debug\DemoScreen.pdb
+C:\Documents and Settings\QuanTV1\Desktop\DemoScreen\DemoScreen\DemoScreen\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\QuanTV1\Desktop\DemoScreen\DemoScreen\DemoScreen\obj\x86\Debug\DemoScreen.Form1.resources
+C:\Documents and Settings\QuanTV1\Desktop\DemoScreen\DemoScreen\DemoScreen\obj\x86\Debug\DemoScreen.Properties.Resources.resources
+C:\Documents and Settings\QuanTV1\Desktop\DemoScreen\DemoScreen\DemoScreen\obj\x86\Debug\DemoScreen.csproj.GenerateResource.Cache
+C:\Documents and Settings\QuanTV1\Desktop\DemoScreen\DemoScreen\DemoScreen\obj\x86\Debug\DemoScreen.exe
+C:\Documents and Settings\QuanTV1\Desktop\DemoScreen\DemoScreen\DemoScreen\obj\x86\Debug\DemoScreen.pdb
+C:\Users\tovanquan\Desktop\DemoScreen\DemoScreen\DemoScreen\obj\x86\Debug\DemoScreen.exe
+C:\Users\tovanquan\Desktop\DemoScreen\DemoScreen\DemoScreen\obj\x86\Debug\DemoScreen.pdb
