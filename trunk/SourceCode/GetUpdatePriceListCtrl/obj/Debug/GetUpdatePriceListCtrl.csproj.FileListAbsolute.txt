@@ -1,5 +1,0 @@
-E:\DATN\SourceCode\GetUpdatePriceListCtrl\bin\Debug\GetUpdatePriceListCtrl.dll
-E:\DATN\SourceCode\GetUpdatePriceListCtrl\bin\Debug\GetUpdatePriceListCtrl.pdb
-E:\DATN\SourceCode\GetUpdatePriceListCtrl\obj\Debug\ResolveAssemblyReference.cache
-E:\DATN\SourceCode\GetUpdatePriceListCtrl\obj\Debug\GetUpdatePriceListCtrl.dll
-E:\DATN\SourceCode\GetUpdatePriceListCtrl\obj\Debug\GetUpdatePriceListCtrl.pdb

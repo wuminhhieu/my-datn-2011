@@ -1,5 +1,0 @@
-E:\DATN\SourceCode\ImageProcessCtrl\bin\Debug\ImageProcessCtrl.dll
-E:\DATN\SourceCode\ImageProcessCtrl\bin\Debug\ImageProcessCtrl.pdb
-E:\DATN\SourceCode\ImageProcessCtrl\obj\Debug\ResolveAssemblyReference.cache
-E:\DATN\SourceCode\ImageProcessCtrl\obj\Debug\ImageProcessCtrl.dll
-E:\DATN\SourceCode\ImageProcessCtrl\obj\Debug\ImageProcessCtrl.pdb

@@ -1,5 +1,0 @@
-E:\DATN\SourceCode\SearchCtrl\bin\Debug\SearchCtrl.dll
-E:\DATN\SourceCode\SearchCtrl\bin\Debug\SearchCtrl.pdb
-E:\DATN\SourceCode\SearchCtrl\obj\Debug\ResolveAssemblyReference.cache
-E:\DATN\SourceCode\SearchCtrl\obj\Debug\SearchCtrl.dll
-E:\DATN\SourceCode\SearchCtrl\obj\Debug\SearchCtrl.pdb
