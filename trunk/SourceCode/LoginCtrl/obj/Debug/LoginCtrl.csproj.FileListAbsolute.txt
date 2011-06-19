@@ -1,0 +1,8 @@
+E:\DATN\SourceCode\LoginCtrl\bin\Debug\LoginCtrl.exe
+E:\DATN\SourceCode\LoginCtrl\bin\Debug\LoginCtrl.pdb
+E:\DATN\SourceCode\LoginCtrl\obj\Debug\ResolveAssemblyReference.cache
+E:\DATN\SourceCode\LoginCtrl\obj\Debug\LoginCtrl.Properties.Resources.resources
+E:\DATN\SourceCode\LoginCtrl\obj\Debug\LoginCtrl.csproj.GenerateResource.Cache
+E:\DATN\SourceCode\LoginCtrl\obj\Debug\LoginCtrl.exe
+E:\DATN\SourceCode\LoginCtrl\obj\Debug\LoginCtrl.pdb
+E:\DATN\SourceCode\LoginCtrl\obj\Debug\LoginCtrl.frmLogin.resources

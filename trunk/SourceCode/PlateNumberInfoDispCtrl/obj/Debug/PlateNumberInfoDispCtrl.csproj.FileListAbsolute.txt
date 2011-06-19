@@ -1,0 +1,5 @@
+E:\DATN\SourceCode\PlateNumberInfoDispCtrl\bin\Debug\PlaceNumberInfoDispCtrl.dll
+E:\DATN\SourceCode\PlateNumberInfoDispCtrl\bin\Debug\PlaceNumberInfoDispCtrl.pdb
+E:\DATN\SourceCode\PlateNumberInfoDispCtrl\obj\Debug\ResolveAssemblyReference.cache
+E:\DATN\SourceCode\PlateNumberInfoDispCtrl\obj\Debug\PlaceNumberInfoDispCtrl.dll
+E:\DATN\SourceCode\PlateNumberInfoDispCtrl\obj\Debug\PlaceNumberInfoDispCtrl.pdb

@@ -1,0 +1,5 @@
+E:\DATN\SourceCode\VideoDisplayCtrl\bin\Debug\VideoDisplayCtrl.dll
+E:\DATN\SourceCode\VideoDisplayCtrl\bin\Debug\VideoDisplayCtrl.pdb
+E:\DATN\SourceCode\VideoDisplayCtrl\obj\Debug\ResolveAssemblyReference.cache
+E:\DATN\SourceCode\VideoDisplayCtrl\obj\Debug\VideoDisplayCtrl.dll
+E:\DATN\SourceCode\VideoDisplayCtrl\obj\Debug\VideoDisplayCtrl.pdb
