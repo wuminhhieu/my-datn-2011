@@ -1,7 +1,0 @@
-E:\DATN\SourceCode\HelpDisplayCtrl\bin\Debug\HelpDisplayCtrl.dll
-E:\DATN\SourceCode\HelpDisplayCtrl\bin\Debug\HelpDisplayCtrl.pdb
-E:\DATN\SourceCode\HelpDisplayCtrl\obj\Debug\ResolveAssemblyReference.cache
-E:\DATN\SourceCode\HelpDisplayCtrl\obj\Debug\HelpDisplayCtrl.Properties.Resources.resources
-E:\DATN\SourceCode\HelpDisplayCtrl\obj\Debug\HelpDisplayCtrl.csproj.GenerateResource.Cache
-E:\DATN\SourceCode\HelpDisplayCtrl\obj\Debug\HelpDisplayCtrl.dll
-E:\DATN\SourceCode\HelpDisplayCtrl\obj\Debug\HelpDisplayCtrl.pdb
