@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FBC63E4-B680-4BF9-AFCD-56D84CA1AF15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\Base\CargroupsTFMBase.cs" />
+    <Compile Include="DAO\Base\CarTFMBase.cs" />
+    <Compile Include="DAO\Base\CartypeTFMBase.cs" />
+    <Compile Include="DAO\Base\EvidenceTFMBase.cs" />
+    <Compile Include="DAO\Base\FareTFMBase.cs" />
+    <Compile Include="DAO\Base\RolepermissionsTFMBase.cs" />
+    <Compile Include="DAO\Base\RolesTFMBase.cs" />
+    <Compile Include="DAO\Base\StationTFMBase.cs" />
+    <Compile Include="DAO\Base\TicketregistrationTFMBase.cs" />
+    <Compile Include="DAO\Base\TickettypeTFMBase.cs" />
+    <Compile Include="DAO\Base\TransactionTFMBase.cs" />
+    <Compile Include="DAO\Base\UserdetailTFMBase.cs" />
+    <Compile Include="DAO\Base\UsersTFMBase.cs" />
+    <Compile Include="DAO\CargroupsTFM.cs" />
+    <Compile Include="DAO\CarTFM.cs" />
+    <Compile Include="DAO\CartypeTFM.cs" />
+    <Compile Include="DAO\EvidenceTFM.cs" />
+    <Compile Include="DAO\FareTFM.cs" />
+    <Compile Include="DAO\RolepermissionsTFM.cs" />
+    <Compile Include="DAO\RolesTFM.cs" />
+    <Compile Include="DAO\StationTFM.cs" />
+    <Compile Include="DAO\TicketregistrationTFM.cs" />
+    <Compile Include="DAO\TickettypeTFM.cs" />
+    <Compile Include="DAO\TransactionTFM.cs" />
+    <Compile Include="DAO\UserdetailTFM.cs" />
+    <Compile Include="DAO\UsersTFM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Constants.cs" />
+    <Compile Include="Utils\DbConstants.cs" />
+    <Compile Include="Utils\SqlClientUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{03EDAB82-4E27-4522-9DC0-0010B7087A3C}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
