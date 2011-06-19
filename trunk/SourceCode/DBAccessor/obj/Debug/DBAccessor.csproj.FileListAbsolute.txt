@@ -1,5 +1,0 @@
-E:\DATN\SourceCode\DBAccessor\bin\Debug\DBAccessor.dll
-E:\DATN\SourceCode\DBAccessor\bin\Debug\DBAccessor.pdb
-E:\DATN\SourceCode\DBAccessor\obj\Debug\ResolveAssemblyReference.cache
-E:\DATN\SourceCode\DBAccessor\obj\Debug\DBAccessor.dll
-E:\DATN\SourceCode\DBAccessor\obj\Debug\DBAccessor.pdb
