@@ -1,0 +1,5 @@
+E:\DATN\SourceCode\LogCtrl\bin\Debug\LogCtrl.dll
+E:\DATN\SourceCode\LogCtrl\bin\Debug\LogCtrl.pdb
+E:\DATN\SourceCode\LogCtrl\obj\Debug\ResolveAssemblyReference.cache
+E:\DATN\SourceCode\LogCtrl\obj\Debug\LogCtrl.dll
+E:\DATN\SourceCode\LogCtrl\obj\Debug\LogCtrl.pdb
