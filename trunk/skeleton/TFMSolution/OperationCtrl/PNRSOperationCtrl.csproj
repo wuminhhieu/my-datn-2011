@@ -78,12 +78,6 @@
       <DependentUpon>GetUpdatePriceListCtrl.cs</DependentUpon>
     </Compile>
     <Compile Include="ImageProcessCtrl.cs" />
-    <Compile Include="LoginCtrl.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginCtrl.Designer.cs">
-      <DependentUpon>LoginCtrl.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
