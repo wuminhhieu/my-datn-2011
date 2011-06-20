@@ -1,5 +1,0 @@
-E:\DATN\skeleton\TFMSolution\TFMCommon\bin\Debug\TFMCommon.dll
-E:\DATN\skeleton\TFMSolution\TFMCommon\bin\Debug\TFMCommon.pdb
-E:\DATN\skeleton\TFMSolution\TFMCommon\obj\Debug\ResolveAssemblyReference.cache
-E:\DATN\skeleton\TFMSolution\TFMCommon\obj\Debug\TFMCommon.dll
-E:\DATN\skeleton\TFMSolution\TFMCommon\obj\Debug\TFMCommon.pdb
