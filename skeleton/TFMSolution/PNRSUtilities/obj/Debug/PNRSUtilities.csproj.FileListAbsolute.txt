@@ -1,0 +1,10 @@
+D:\DATN\TFMSolution\PNRSUtilities\bin\Debug\PNRSUtilities.dll
+D:\DATN\TFMSolution\PNRSUtilities\bin\Debug\PNRSUtilities.pdb
+D:\DATN\TFMSolution\PNRSUtilities\obj\Debug\ResolveAssemblyReference.cache
+D:\DATN\TFMSolution\PNRSUtilities\obj\Debug\PNRSUtilities.dll
+D:\DATN\TFMSolution\PNRSUtilities\obj\Debug\PNRSUtilities.pdb
+E:\DATN\skeleton\TFMSolution\PNRSUtilities\bin\Debug\PNRSUtilities.dll
+E:\DATN\skeleton\TFMSolution\PNRSUtilities\bin\Debug\PNRSUtilities.pdb
+E:\DATN\skeleton\TFMSolution\PNRSUtilities\obj\Debug\ResolveAssemblyReference.cache
+E:\DATN\skeleton\TFMSolution\PNRSUtilities\obj\Debug\PNRSUtilities.dll
+E:\DATN\skeleton\TFMSolution\PNRSUtilities\obj\Debug\PNRSUtilities.pdb

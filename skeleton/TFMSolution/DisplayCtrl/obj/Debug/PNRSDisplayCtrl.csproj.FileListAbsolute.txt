@@ -1,0 +1,10 @@
+D:\DATN\TFMSolution\DisplayCtrl\bin\Debug\DisplayCtrl.dll
+D:\DATN\TFMSolution\DisplayCtrl\bin\Debug\DisplayCtrl.pdb
+D:\DATN\TFMSolution\DisplayCtrl\obj\Debug\ResolveAssemblyReference.cache
+D:\DATN\TFMSolution\DisplayCtrl\obj\Debug\DisplayCtrl.dll
+D:\DATN\TFMSolution\DisplayCtrl\obj\Debug\DisplayCtrl.pdb
+E:\DATN\skeleton\TFMSolution\DisplayCtrl\bin\Debug\DisplayCtrl.dll
+E:\DATN\skeleton\TFMSolution\DisplayCtrl\bin\Debug\DisplayCtrl.pdb
+E:\DATN\skeleton\TFMSolution\DisplayCtrl\obj\Debug\ResolveAssemblyReference.cache
+E:\DATN\skeleton\TFMSolution\DisplayCtrl\obj\Debug\DisplayCtrl.dll
+E:\DATN\skeleton\TFMSolution\DisplayCtrl\obj\Debug\DisplayCtrl.pdb
