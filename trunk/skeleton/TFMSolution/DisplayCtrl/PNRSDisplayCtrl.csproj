@@ -96,6 +96,12 @@
     <Compile Include="VideoDisplayCtrl.Designer.cs">
       <DependentUpon>VideoDisplayCtrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="VideoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VideoView.designer.cs">
+      <DependentUpon>VideoView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -113,6 +119,11 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="VideoView.resx">
+      <DependentUpon>VideoView.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
