@@ -84,19 +84,10 @@
     <Compile Include="LoginCtrl.Designer.cs">
       <DependentUpon>LoginCtrl.cs</DependentUpon>
     </Compile>
-    <Compile Include="PNRSView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PNRSView.Designer.cs">
-      <DependentUpon>PNRSView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPNRSView.resx">
       <DependentUpon>frmPNRSView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PNRSView.resx">
-      <DependentUpon>PNRSView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
