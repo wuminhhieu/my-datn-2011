@@ -1,0 +1,8 @@
+E:\DATN\source\SourceCode\DAL\bin\Debug\DAL.dll.config
+E:\DATN\source\SourceCode\DAL\bin\Debug\DAL.dll
+E:\DATN\source\SourceCode\DAL\bin\Debug\DAL.pdb
+E:\DATN\source\SourceCode\DAL\bin\Debug\Common.dll
+E:\DATN\source\SourceCode\DAL\bin\Debug\Common.pdb
+E:\DATN\source\SourceCode\DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\DATN\source\SourceCode\DAL\obj\Debug\DAL.dll
+E:\DATN\source\SourceCode\DAL\obj\Debug\DAL.pdb
