@@ -72,6 +72,12 @@
     <Compile Include="Constant\ErrorID.cs" />
     <Compile Include="Constant\EventID.cs" />
     <Compile Include="Constant\Message.cs" />
+    <Compile Include="frmPNRSView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPNRSView.designer.cs">
+      <DependentUpon>frmPNRSView.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginCtrl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmPNRSView.resx">
+      <DependentUpon>frmPNRSView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PNRSView.resx">
       <DependentUpon>PNRSView.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +134,20 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DisplayCtrl\PNRSDisplayCtrl.csproj">
+      <Project>{588F846B-E3B8-4497-8CA8-7EE5362B53E0}</Project>
+      <Name>PNRSDisplayCtrl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperationCtrl\PNRSOperationCtrl.csproj">
+      <Project>{E280F875-20BC-456C-8225-AF5B1824B65D}</Project>
+      <Name>PNRSOperationCtrl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PNRSUtilities\PNRSUtilities.csproj">
+      <Project>{067A4C60-296A-4204-A610-EE137272BB1A}</Project>
+      <Name>PNRSUtilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
