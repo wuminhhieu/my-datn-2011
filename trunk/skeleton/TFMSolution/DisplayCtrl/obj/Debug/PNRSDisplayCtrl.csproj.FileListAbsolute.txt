@@ -11,3 +11,4 @@ E:\DATN\skeleton\TFMSolution\DisplayCtrl\obj\Debug\GenerateResource-ResGen.read.
 E:\DATN\skeleton\TFMSolution\DisplayCtrl\obj\Debug\GenerateResource-ResGen.write.1.tlog
 E:\DATN\skeleton\TFMSolution\DisplayCtrl\obj\Debug\DisplayCtrl.dll
 E:\DATN\skeleton\TFMSolution\DisplayCtrl\obj\Debug\DisplayCtrl.pdb
+E:\DATN\skeleton\TFMSolution\DisplayCtrl\obj\Debug\DisplayCtrl.PlateNumberInfoView.resources
