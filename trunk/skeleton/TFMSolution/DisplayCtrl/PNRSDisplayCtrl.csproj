@@ -77,12 +77,6 @@
     <Compile Include="HelpDisplayCtrl.Designer.cs">
       <DependentUpon>HelpDisplayCtrl.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlaceNumberInfoDispCtrl.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PlaceNumberInfoDispCtrl.Designer.cs">
-      <DependentUpon>PlaceNumberInfoDispCtrl.cs</DependentUpon>
-    </Compile>
     <Compile Include="PlateNumberInfoView.cs">
       <SubType>UserControl</SubType>
     </Compile>
