@@ -1,0 +1,10 @@
+D:\DATN\TFMSolution\OperationCtrl\bin\Debug\OperationCtrl.dll
+D:\DATN\TFMSolution\OperationCtrl\bin\Debug\OperationCtrl.pdb
+D:\DATN\TFMSolution\OperationCtrl\obj\Debug\ResolveAssemblyReference.cache
+D:\DATN\TFMSolution\OperationCtrl\obj\Debug\OperationCtrl.dll
+D:\DATN\TFMSolution\OperationCtrl\obj\Debug\OperationCtrl.pdb
+E:\DATN\skeleton\TFMSolution\OperationCtrl\bin\Debug\OperationCtrl.dll
+E:\DATN\skeleton\TFMSolution\OperationCtrl\bin\Debug\OperationCtrl.pdb
+E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\ResolveAssemblyReference.cache
+E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\OperationCtrl.dll
+E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\OperationCtrl.pdb
