@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DisplayCtrl;
+using TFM.Common.Models;
 
 namespace PNRSCtrl
 {
@@ -30,11 +31,28 @@ namespace PNRSCtrl
         /// 
         /// </summary>
         private SearchView frmSearchView;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private OperationCtrl.GetUpdatePriceListCtrl frmGetupdateFriceList;
         #endregion
+
+        /// <summary>
+        /// current price list
+        /// </summary>
+        public FareInfo currentFareInfo { set; get; }
+
+
         public frmPNRSView()
         {
             InitializeComponent();
             frmSearchView = new SearchView();
+            currentFareInfo = new FareInfo();
+
+            frmGetupdateFriceList = new OperationCtrl.GetUpdatePriceListCtrl();
+            frmGetupdateFriceList.SetCurrentFareInfo(currentFareInfo);
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -76,7 +94,7 @@ namespace PNRSCtrl
 
         private void toolStriptoolStripPriceList_Click(object sender, EventArgs e)
         {
-
+            frmGetupdateFriceList.ShowDialog();
         }
 
         private void toolStripSearch_Click(object sender, EventArgs e)
