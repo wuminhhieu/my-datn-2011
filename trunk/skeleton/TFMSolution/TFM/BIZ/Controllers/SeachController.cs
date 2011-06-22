@@ -7,5 +7,6 @@ namespace BIZ.Controllers
 {
     class SeachController
     {
+
     }
 }
