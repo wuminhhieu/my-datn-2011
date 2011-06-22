@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PNRSCtrl</RootNamespace>
     <AssemblyName>PNRSCtrl</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -31,6 +31,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -102,6 +103,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -141,6 +143,18 @@
     <ProjectReference Include="..\PNRSUtilities\PNRSUtilities.csproj">
       <Project>{067A4C60-296A-4204-A610-EE137272BB1A}</Project>
       <Name>PNRSUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TFM\BIZ\BIZ.csproj">
+      <Project>{928E99F1-4126-41A2-8DB5-F4349C4994CB}</Project>
+      <Name>BIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TFM\Common\Common.csproj">
+      <Project>{03EDAB82-4E27-4522-9DC0-0010B7087A3C}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TFM\DAL\DAL.csproj">
+      <Project>{5FBC63E4-B680-4BF9-AFCD-56D84CA1AF15}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
