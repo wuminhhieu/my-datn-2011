@@ -7,3 +7,12 @@ E:\DATN\source\SourceCode\BIZ\bin\Debug\DAL.pdb
 E:\DATN\source\SourceCode\BIZ\obj\Debug\ResolveAssemblyReference.cache
 E:\DATN\source\SourceCode\BIZ\obj\Debug\BIZ.dll
 E:\DATN\source\SourceCode\BIZ\obj\Debug\BIZ.pdb
+E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\BIZ.dll
+E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\BIZ.pdb
+E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\Common.dll
+E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\DAL.dll
+E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\Common.pdb
+E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\DAL.pdb
+E:\DATN\skeleton\TFMSolution\TFM\BIZ\obj\Debug\ResolveAssemblyReference.cache
+E:\DATN\skeleton\TFMSolution\TFM\BIZ\obj\Debug\BIZ.dll
+E:\DATN\skeleton\TFMSolution\TFM\BIZ\obj\Debug\BIZ.pdb

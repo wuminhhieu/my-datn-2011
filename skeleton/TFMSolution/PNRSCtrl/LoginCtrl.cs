@@ -11,9 +11,35 @@ namespace PNRSCtrl
 {
     public partial class LoginCtrl : Form
     {
+        /// <summary>
+        /// main view of PNRS
+        /// </summary>
+        frmPNRSView loginView;
         public LoginCtrl()
         {
             InitializeComponent();
+            loginView = new frmPNRSView();
+            loginView.EventRequestSwitchUser += new frmPNRSView.RequestSwitchUser(loginView_EventRequestUser);
+        }
+
+        void loginView_EventRequestUser(bool isShowed)
+        {
+            if (isShowed)
+            {
+                this.Show();
+                loginView.Hide();
+            }
+            else 
+            {
+                this.Close();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            loginView.Show();
+            this.Hide();
         }
     }
 }
