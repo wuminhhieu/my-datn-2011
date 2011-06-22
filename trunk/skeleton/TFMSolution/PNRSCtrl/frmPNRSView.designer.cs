@@ -31,12 +31,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSwitchUser = new System.Windows.Forms.ToolStripMenuItem();
             this.bảngGiáToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripPriceList = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.videoView1 = new DisplayCtrl.VideoView();
             this.plateNumberInfoView1 = new DisplayCtrl.PlateNumberInfoView();
+            this.videoView1 = new DisplayCtrl.VideoView();
+            this.toolStripSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +46,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tàiKhoảnToolStripMenuItem,
             this.bảngGiáToolStripMenuItem,
-            this.trợGiúpToolStripMenuItem});
+            this.trợGiúpToolStripMenuItem,
+            this.toolStripSearch});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1277, 24);
@@ -56,7 +58,7 @@
             // 
             this.tàiKhoảnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.đăngXuấtToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.toolStripSwitchUser});
             this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
             this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.tàiKhoảnToolStripMenuItem.Text = "Tài khoản";
@@ -67,26 +69,27 @@
             this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             // 
-            // toolStripMenuItem1
+            // toolStripSwitchUser
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
-            this.toolStripMenuItem1.Text = "Chuyển Nhân Viên";
+            this.toolStripSwitchUser.Name = "toolStripSwitchUser";
+            this.toolStripSwitchUser.Size = new System.Drawing.Size(173, 22);
+            this.toolStripSwitchUser.Text = "Chuyển Nhân Viên";
+            this.toolStripSwitchUser.Click += new System.EventHandler(this.toolStripSwitchUser_Click);
             // 
             // bảngGiáToolStripMenuItem
             // 
             this.bảngGiáToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2});
+            this.toolStripPriceList});
             this.bảngGiáToolStripMenuItem.Name = "bảngGiáToolStripMenuItem";
             this.bảngGiáToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.bảngGiáToolStripMenuItem.Text = "Bảng giá";
             // 
-            // toolStripMenuItem2
+            // toolStripPriceList
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem2.Text = "Xem";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            this.toolStripPriceList.Name = "toolStripPriceList";
+            this.toolStripPriceList.Size = new System.Drawing.Size(152, 22);
+            this.toolStripPriceList.Text = "Xem";
+            this.toolStripPriceList.Click += new System.EventHandler(this.toolStriptoolStripPriceList_Click);
             // 
             // trợGiúpToolStripMenuItem
             // 
@@ -95,6 +98,13 @@
             this.trợGiúpToolStripMenuItem.Text = "Trợ giúp";
             this.trợGiúpToolStripMenuItem.Click += new System.EventHandler(this.trợGiúpToolStripMenuItem_Click);
             // 
+            // plateNumberInfoView1
+            // 
+            this.plateNumberInfoView1.Location = new System.Drawing.Point(461, 27);
+            this.plateNumberInfoView1.Name = "plateNumberInfoView1";
+            this.plateNumberInfoView1.Size = new System.Drawing.Size(801, 479);
+            this.plateNumberInfoView1.TabIndex = 2;
+            // 
             // videoView1
             // 
             this.videoView1.Location = new System.Drawing.Point(12, 27);
@@ -102,12 +112,12 @@
             this.videoView1.Size = new System.Drawing.Size(443, 459);
             this.videoView1.TabIndex = 1;
             // 
-            // plateNumberInfoView1
+            // toolStripSearch
             // 
-            this.plateNumberInfoView1.Location = new System.Drawing.Point(461, 27);
-            this.plateNumberInfoView1.Name = "plateNumberInfoView1";
-            this.plateNumberInfoView1.Size = new System.Drawing.Size(801, 479);
-            this.plateNumberInfoView1.TabIndex = 2;
+            this.toolStripSearch.Name = "toolStripSearch";
+            this.toolStripSearch.Size = new System.Drawing.Size(69, 20);
+            this.toolStripSearch.Text = "Tìm kiếm";
+            this.toolStripSearch.Click += new System.EventHandler(this.toolStripSearch_Click);
             // 
             // frmPNRSView
             // 
@@ -120,6 +130,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPNRSView";
             this.Text = "TFM";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPNRSView_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -134,10 +145,11 @@
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bảngGiáToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripSwitchUser;
+        private System.Windows.Forms.ToolStripMenuItem toolStripPriceList;
         private DisplayCtrl.VideoView videoView1;
         private DisplayCtrl.PlateNumberInfoView plateNumberInfoView1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripSearch;
     }
 }
 
