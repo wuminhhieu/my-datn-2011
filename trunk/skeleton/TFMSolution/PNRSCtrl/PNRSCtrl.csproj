@@ -87,6 +87,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketregistrationInfo.cs" />
     <EmbeddedResource Include="frmPNRSView.resx">
       <DependentUpon>frmPNRSView.cs</DependentUpon>
     </EmbeddedResource>

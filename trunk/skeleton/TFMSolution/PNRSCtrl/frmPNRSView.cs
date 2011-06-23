@@ -13,6 +13,7 @@ namespace PNRSCtrl
 {
     public partial class frmPNRSView : Form
     {
+     
         #region event
         /// <summary>
         /// delegate swith user
@@ -89,7 +90,7 @@ namespace PNRSCtrl
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            label2.Text = PNRSUtilities.PNRSData.PNRSDataObj.pricelis;
         }
     }
 }

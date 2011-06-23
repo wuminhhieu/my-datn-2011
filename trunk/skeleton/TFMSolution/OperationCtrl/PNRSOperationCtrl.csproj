@@ -102,6 +102,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PNRSUtilities\PNRSUtilities.csproj">
+      <Project>{067A4C60-296A-4204-A610-EE137272BB1A}</Project>
+      <Name>PNRSUtilities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TFM\BIZ\BIZ.csproj">
       <Project>{928E99F1-4126-41A2-8DB5-F4349C4994CB}</Project>
       <Name>BIZ</Name>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using TFM.Common.Models;
 using OperationCtrl.Constant;
+using PNRSUtilities;
 
 namespace OperationCtrl
 {
@@ -28,30 +29,35 @@ namespace OperationCtrl
 
         #region public member
 
-        public PriceList currentPriceList; 
+        public PriceList currentPriceList;
 
         #endregion
 
         public void DisplayCurrentPriceList(PriceList currentPriceList) 
         {
-            label1.Text = currentPriceList.priceList.Price;
-            label2.Text = currentPriceList.priceList.Station.ToString();
+            //label1.Text = currentPriceList.priceList.Price;
+            //label2.Text = currentPriceList.priceList.Station.ToString();
         }
 
         public GetUpdatePriceListCtrl()
         {
             InitializeComponent();
-            currentPriceList = new PriceList();
-            currentPriceList.Inittialize();
-            label1.Text = currentPriceList.priceList.Station.ToString();
-            label2.Text = currentPriceList.priceList.Price;
+
+            //currentPriceList = new PriceList();
+            //currentPriceList.Inittialize();
+
+            //label1.Text = currentPriceList.priceList.Station.ToString();
+            //label2.Text = currentPriceList.priceList.Price;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click1(object sender, EventArgs e)
         {
-            currentPriceList.GetUpdatePriceList();
-            label1.Text = currentPriceList.priceList.Station.ToString();
-            label2.Text = currentPriceList.priceList.Price;
+            PNRSData.PNRSDataObj.pricelis = "abc";
+            //currentPriceList.GetUpdatePriceList();
+            //label1.Text = currentPriceList.priceList.Station.ToString();
+            //label2.Text = currentPriceList.priceList.Price;
         }
+
+      
 }
 }
