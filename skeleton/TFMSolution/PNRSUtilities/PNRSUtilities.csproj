@@ -67,7 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
-    <Compile Include="Entity.cs" />
+    <Compile Include="PNRSData.cs" />
     <Compile Include="EventLog.cs" />
     <Compile Include="FileLog.cs" />
     <Compile Include="FunctionLib.cs" />
