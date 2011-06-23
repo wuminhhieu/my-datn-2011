@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using TFM.Common.Models;
+using OperationCtrl.Constant;
 
 namespace OperationCtrl
 {
@@ -27,29 +28,30 @@ namespace OperationCtrl
 
         #region public member
 
+        public PriceList currentPriceList; 
 
-        public FareInfo fareInfo;
         #endregion
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="fareInfo"></param>
-        public void SetCurrentFareInfo(FareInfo fareInfo)
+        public void DisplayCurrentPriceList(PriceList currentPriceList) 
         {
-            this.fareInfo = fareInfo;
+            label1.Text = currentPriceList.priceList.Price;
+            label2.Text = currentPriceList.priceList.Station.ToString();
         }
+
         public GetUpdatePriceListCtrl()
         {
             InitializeComponent();
+            currentPriceList = new PriceList();
+            currentPriceList.Inittialize();
+            label1.Text = currentPriceList.priceList.Station.ToString();
+            label2.Text = currentPriceList.priceList.Price;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            fareInfo.Apply_date = 1;
-            fareInfo.Car_group = 2;
-            fareInfo.Created_date = 3;
-
+            currentPriceList.GetUpdatePriceList();
+            label1.Text = currentPriceList.priceList.Station.ToString();
+            label2.Text = currentPriceList.priceList.Price;
         }
 }
 }
