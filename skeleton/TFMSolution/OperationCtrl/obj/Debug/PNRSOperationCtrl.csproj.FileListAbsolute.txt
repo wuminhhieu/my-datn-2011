@@ -8,3 +8,14 @@ E:\DATN\skeleton\TFMSolution\OperationCtrl\bin\Debug\OperationCtrl.pdb
 E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\ResolveAssemblyReference.cache
 E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\OperationCtrl.dll
 E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\OperationCtrl.pdb
+E:\DATN\skeleton\TFMSolution\OperationCtrl\bin\Debug\BIZ.dll
+E:\DATN\skeleton\TFMSolution\OperationCtrl\bin\Debug\Common.dll
+E:\DATN\skeleton\TFMSolution\OperationCtrl\bin\Debug\DAL.dll
+E:\DATN\skeleton\TFMSolution\OperationCtrl\bin\Debug\BIZ.pdb
+E:\DATN\skeleton\TFMSolution\OperationCtrl\bin\Debug\Common.pdb
+E:\DATN\skeleton\TFMSolution\OperationCtrl\bin\Debug\DAL.pdb
+E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\OperationCtrl.GetUpdatePriceListCtrl.resources
+E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\GenerateResource.read.1.tlog
+E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\DATN\skeleton\TFMSolution\OperationCtrl\obj\Debug\GenerateResource.write.1.tlog
