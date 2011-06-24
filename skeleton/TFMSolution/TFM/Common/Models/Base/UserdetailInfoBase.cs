@@ -9,6 +9,7 @@ namespace TFM.Common.Models.Base
 
 		private int userid;
 		private string fullname;
+		private string picture;
 		private string email;
 		private string address;
 		private string phone;
@@ -31,9 +32,10 @@ namespace TFM.Common.Models.Base
 		/// <summary>
 		/// Initializes a new instance of the UserdetailInfoBase class.
 		/// </summary>
-		public UserdetailInfoBase(string fullname, string email, string address, string phone, string company, string title, string cmnd, string station)
+		public UserdetailInfoBase(string fullname, string picture, string email, string address, string phone, string company, string title, string cmnd, string station)
 		{
 			this.fullname = fullname;
+			this.picture = picture;
 			this.email = email;
 			this.address = address;
 			this.phone = phone;
@@ -46,10 +48,11 @@ namespace TFM.Common.Models.Base
 		/// <summary>
 		/// Initializes a new instance of the UserdetailInfoBase class.
 		/// </summary>
-		public UserdetailInfoBase(int userid, string fullname, string email, string address, string phone, string company, string title, string cmnd, string station)
+		public UserdetailInfoBase(int userid, string fullname, string picture, string email, string address, string phone, string company, string title, string cmnd, string station)
 		{
 			this.userid = userid;
 			this.fullname = fullname;
+			this.picture = picture;
 			this.email = email;
 			this.address = address;
 			this.phone = phone;
@@ -78,6 +81,15 @@ namespace TFM.Common.Models.Base
 		{
 			get { return fullname; }
 			set { fullname = value; }
+		}
+
+		/// <summary>
+		/// Gets or sets the Picture value.
+		/// </summary>
+		public string Picture
+		{
+			get { return picture; }
+			set { picture = value; }
 		}
 
 		/// <summary>

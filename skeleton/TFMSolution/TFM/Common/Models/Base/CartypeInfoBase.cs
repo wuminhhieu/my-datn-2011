@@ -13,6 +13,7 @@ namespace TFM.Common.Models.Base
 		private string weight;
 		private string seat;
 		private string capacity;
+		private string priority_property;
 
 		#endregion
 
@@ -28,19 +29,20 @@ namespace TFM.Common.Models.Base
 		/// <summary>
 		/// Initializes a new instance of the CartypeInfoBase class.
 		/// </summary>
-		public CartypeInfoBase(string name, string note, string weight, string seat, string capacity)
+		public CartypeInfoBase(string name, string note, string weight, string seat, string capacity, string priority_property)
 		{
 			this.name = name;
 			this.note = note;
 			this.weight = weight;
 			this.seat = seat;
 			this.capacity = capacity;
+			this.priority_property = priority_property;
 		}
 
 		/// <summary>
 		/// Initializes a new instance of the CartypeInfoBase class.
 		/// </summary>
-		public CartypeInfoBase(int typeid, string name, string note, string weight, string seat, string capacity)
+		public CartypeInfoBase(int typeid, string name, string note, string weight, string seat, string capacity, string priority_property)
 		{
 			this.typeid = typeid;
 			this.name = name;
@@ -48,6 +50,7 @@ namespace TFM.Common.Models.Base
 			this.weight = weight;
 			this.seat = seat;
 			this.capacity = capacity;
+			this.priority_property = priority_property;
 		}
 
 		#endregion
@@ -105,6 +108,15 @@ namespace TFM.Common.Models.Base
 		{
 			get { return capacity; }
 			set { capacity = value; }
+		}
+
+		/// <summary>
+		/// Gets or sets the Priority_property value.
+		/// </summary>
+		public string Priority_property
+		{
+			get { return priority_property; }
+			set { priority_property = value; }
 		}
 
 		#endregion

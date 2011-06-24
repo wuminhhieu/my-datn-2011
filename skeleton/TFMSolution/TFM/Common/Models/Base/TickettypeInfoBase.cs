@@ -10,6 +10,7 @@ namespace TFM.Common.Models.Base
 		private int ticket_type_id;
 		private string name;
 		private int created_date;
+		private string description;
 
 		#endregion
 
@@ -25,20 +26,22 @@ namespace TFM.Common.Models.Base
 		/// <summary>
 		/// Initializes a new instance of the TickettypeInfoBase class.
 		/// </summary>
-		public TickettypeInfoBase(string name, int created_date)
+		public TickettypeInfoBase(string name, int created_date, string description)
 		{
 			this.name = name;
 			this.created_date = created_date;
+			this.description = description;
 		}
 
 		/// <summary>
 		/// Initializes a new instance of the TickettypeInfoBase class.
 		/// </summary>
-		public TickettypeInfoBase(int ticket_type_id, string name, int created_date)
+		public TickettypeInfoBase(int ticket_type_id, string name, int created_date, string description)
 		{
 			this.ticket_type_id = ticket_type_id;
 			this.name = name;
 			this.created_date = created_date;
+			this.description = description;
 		}
 
 		#endregion
@@ -69,6 +72,15 @@ namespace TFM.Common.Models.Base
 		{
 			get { return created_date; }
 			set { created_date = value; }
+		}
+
+		/// <summary>
+		/// Gets or sets the Description value.
+		/// </summary>
+		public string Description
+		{
+			get { return description; }
+			set { description = value; }
 		}
 
 		#endregion

@@ -12,7 +12,7 @@ namespace TFM.Common.Models.Base
 		private int time;
 		private int userid;
 		private string price;
-		private string car;
+		private string number_plate;
 		private int evidence;
 
 		#endregion
@@ -29,14 +29,14 @@ namespace TFM.Common.Models.Base
 		/// <summary>
 		/// Initializes a new instance of the TransactionInfoBase class.
 		/// </summary>
-		public TransactionInfoBase(int transactionid, int station, int time, int userid, string price, string car, int evidence)
+		public TransactionInfoBase(int transactionid, int station, int time, int userid, string price, string number_plate, int evidence)
 		{
 			this.transactionid = transactionid;
 			this.station = station;
 			this.time = time;
 			this.userid = userid;
 			this.price = price;
-			this.car = car;
+			this.number_plate = number_plate;
 			this.evidence = evidence;
 		}
 
@@ -89,12 +89,12 @@ namespace TFM.Common.Models.Base
 		}
 
 		/// <summary>
-		/// Gets or sets the Car value.
+		/// Gets or sets the Number_plate value.
 		/// </summary>
-		public string Car
+		public string Number_plate
 		{
-			get { return car; }
-			set { car = value; }
+			get { return number_plate; }
+			set { number_plate = value; }
 		}
 
 		/// <summary>
