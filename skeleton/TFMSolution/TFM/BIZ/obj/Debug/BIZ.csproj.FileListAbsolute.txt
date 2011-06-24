@@ -7,14 +7,3 @@ C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\Biz\bin\Debug\DAL.
 C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\Biz\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\Biz\obj\Debug\Biz.dll
 C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\Biz\obj\Debug\Biz.pdb
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\obj\Debug\ResolveAssemblyReference.cache
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\obj\Debug\BIZ.dll
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\BIZ.dll
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\BIZ.pdb
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\Common.dll
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\DAL.dll
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\PNRSUtilities.dll
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\PNRSUtilities.pdb
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\Common.pdb
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\bin\Debug\DAL.pdb
-E:\DATN\skeleton\TFMSolution\TFM\BIZ\obj\Debug\BIZ.pdb
