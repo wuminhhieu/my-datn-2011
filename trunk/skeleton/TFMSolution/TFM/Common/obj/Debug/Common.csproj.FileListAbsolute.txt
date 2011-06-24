@@ -1,10 +1,5 @@
-E:\DATN\source\SourceCode\Common\bin\Debug\Common.dll
-E:\DATN\source\SourceCode\Common\bin\Debug\Common.pdb
-E:\DATN\source\SourceCode\Common\obj\Debug\ResolveAssemblyReference.cache
-E:\DATN\source\SourceCode\Common\obj\Debug\Common.dll
-E:\DATN\source\SourceCode\Common\obj\Debug\Common.pdb
-E:\DATN\skeleton\TFMSolution\TFM\Common\bin\Debug\Common.dll
-E:\DATN\skeleton\TFMSolution\TFM\Common\bin\Debug\Common.pdb
-E:\DATN\skeleton\TFMSolution\TFM\Common\obj\Debug\ResolveAssemblyReference.cache
-E:\DATN\skeleton\TFMSolution\TFM\Common\obj\Debug\Common.dll
-E:\DATN\skeleton\TFMSolution\TFM\Common\obj\Debug\Common.pdb
+C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\Common\bin\Debug\Common.dll
+C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\Common\bin\Debug\Common.pdb
+C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\Common\obj\Debug\Common.dll
+C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\Common\obj\Debug\Common.pdb

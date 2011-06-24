@@ -13,6 +13,8 @@ namespace TFM.Common.Models.Base
 		private int start_date;
 		private int end_date;
 		private int station;
+		private string customer;
+		private string staff;
 
 		#endregion
 
@@ -28,7 +30,7 @@ namespace TFM.Common.Models.Base
 		/// <summary>
 		/// Initializes a new instance of the TicketregistrationInfoBase class.
 		/// </summary>
-		public TicketregistrationInfoBase(int ticketid, string number_plate, int ticket_type, int start_date, int end_date, int station)
+		public TicketregistrationInfoBase(int ticketid, string number_plate, int ticket_type, int start_date, int end_date, int station, string customer, string staff)
 		{
 			this.ticketid = ticketid;
 			this.number_plate = number_plate;
@@ -36,6 +38,8 @@ namespace TFM.Common.Models.Base
 			this.start_date = start_date;
 			this.end_date = end_date;
 			this.station = station;
+			this.customer = customer;
+			this.staff = staff;
 		}
 
 		#endregion
@@ -93,6 +97,24 @@ namespace TFM.Common.Models.Base
 		{
 			get { return station; }
 			set { station = value; }
+		}
+
+		/// <summary>
+		/// Gets or sets the Customer value.
+		/// </summary>
+		public string Customer
+		{
+			get { return customer; }
+			set { customer = value; }
+		}
+
+		/// <summary>
+		/// Gets or sets the Staff value.
+		/// </summary>
+		public string Staff
+		{
+			get { return staff; }
+			set { staff = value; }
 		}
 
 		#endregion

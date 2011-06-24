@@ -11,6 +11,7 @@ namespace TFM.Common.Models.Base
 		private string name;
 		private string province;
 		private string company;
+		private string description;
 
 		#endregion
 
@@ -26,12 +27,13 @@ namespace TFM.Common.Models.Base
 		/// <summary>
 		/// Initializes a new instance of the StationInfoBase class.
 		/// </summary>
-		public StationInfoBase(int stationid, string name, string province, string company)
+		public StationInfoBase(int stationid, string name, string province, string company, string description)
 		{
 			this.stationid = stationid;
 			this.name = name;
 			this.province = province;
 			this.company = company;
+			this.description = description;
 		}
 
 		#endregion
@@ -71,6 +73,15 @@ namespace TFM.Common.Models.Base
 		{
 			get { return company; }
 			set { company = value; }
+		}
+
+		/// <summary>
+		/// Gets or sets the Description value.
+		/// </summary>
+		public string Description
+		{
+			get { return description; }
+			set { description = value; }
 		}
 
 		#endregion

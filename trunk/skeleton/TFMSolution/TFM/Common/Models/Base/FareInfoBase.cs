@@ -11,7 +11,7 @@ namespace TFM.Common.Models.Base
 		private int car_group;
 		private int ticket_type;
 		private int station;
-		private string price;
+		private int price;
 		private int apply_date;
 		private int created_date;
 		private int is_active;
@@ -30,7 +30,7 @@ namespace TFM.Common.Models.Base
 		/// <summary>
 		/// Initializes a new instance of the FareInfoBase class.
 		/// </summary>
-		public FareInfoBase(int car_group, int ticket_type, int station, string price, int apply_date, int created_date, int is_active)
+		public FareInfoBase(int car_group, int ticket_type, int station, int price, int apply_date, int created_date, int is_active)
 		{
 			this.car_group = car_group;
 			this.ticket_type = ticket_type;
@@ -44,7 +44,7 @@ namespace TFM.Common.Models.Base
 		/// <summary>
 		/// Initializes a new instance of the FareInfoBase class.
 		/// </summary>
-		public FareInfoBase(int fareid, int car_group, int ticket_type, int station, string price, int apply_date, int created_date, int is_active)
+		public FareInfoBase(int fareid, int car_group, int ticket_type, int station, int price, int apply_date, int created_date, int is_active)
 		{
 			this.fareid = fareid;
 			this.car_group = car_group;
@@ -98,7 +98,7 @@ namespace TFM.Common.Models.Base
 		/// <summary>
 		/// Gets or sets the Price value.
 		/// </summary>
-		public string Price
+		public int Price
 		{
 			get { return price; }
 			set { price = value; }
