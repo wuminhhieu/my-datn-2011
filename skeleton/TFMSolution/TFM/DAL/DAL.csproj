@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5FBC63E4-B680-4BF9-AFCD-56D84CA1AF15}</ProjectGuid>
+    <ProjectGuid>{1D1CDFD6-954E-4D8A-8ABD-5E67A49D34EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DAL</RootNamespace>
@@ -69,12 +69,8 @@
     <Compile Include="DAO\UserdetailTFM.cs" />
     <Compile Include="DAO\UsersTFM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\Constants.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Utils\DbConstants.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Utils\Constants.cs" />
+    <Compile Include="Utils\DbConstants.cs" />
     <Compile Include="Utils\SqlClientUtility.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -82,7 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{03EDAB82-4E27-4522-9DC0-0010B7087A3C}</Project>
+      <Project>{479D123C-604C-4584-A643-307A0F930303}</Project>
       <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>

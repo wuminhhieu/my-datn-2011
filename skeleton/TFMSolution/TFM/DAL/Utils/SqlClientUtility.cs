@@ -25,7 +25,6 @@ namespace TFM.DAL.Utils
 		{
 			if (Transaction.Current == null)
 			{
-
 				string connectionString = ConfigurationManager.ConnectionStrings[connectionStringName].ConnectionString;
 				using (SqlConnection connection = new SqlConnection(connectionString))
 				{

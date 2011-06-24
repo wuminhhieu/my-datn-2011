@@ -35,6 +35,7 @@ namespace TFM.DAL.Base
 			SqlParameter[] parameters = new SqlParameter[]
 			{
 				new SqlParameter("@fullname", userdetailInfo.Fullname),
+				new SqlParameter("@picture", userdetailInfo.Picture),
 				new SqlParameter("@email", userdetailInfo.Email),
 				new SqlParameter("@address", userdetailInfo.Address),
 				new SqlParameter("@phone", userdetailInfo.Phone),
@@ -56,6 +57,7 @@ namespace TFM.DAL.Base
 			{
 				new SqlParameter("@userid", userdetailInfo.Userid),
 				new SqlParameter("@fullname", userdetailInfo.Fullname),
+				new SqlParameter("@picture", userdetailInfo.Picture),
 				new SqlParameter("@email", userdetailInfo.Email),
 				new SqlParameter("@address", userdetailInfo.Address),
 				new SqlParameter("@phone", userdetailInfo.Phone),
@@ -166,6 +168,7 @@ namespace TFM.DAL.Base
 			UserdetailInfo userdetailInfo = new UserdetailInfo();
 			userdetailInfo.Userid = SqlClientUtility.GetInt32(dataReader,DbConstants.USER_DETAIL.USERID, 0);
 			userdetailInfo.Fullname = SqlClientUtility.GetString(dataReader,DbConstants.USER_DETAIL.FULLNAME, String.Empty);
+			userdetailInfo.Picture = SqlClientUtility.GetString(dataReader,DbConstants.USER_DETAIL.PICTURE, String.Empty);
 			userdetailInfo.Email = SqlClientUtility.GetString(dataReader,DbConstants.USER_DETAIL.EMAIL, String.Empty);
 			userdetailInfo.Address = SqlClientUtility.GetString(dataReader,DbConstants.USER_DETAIL.ADDRESS, String.Empty);
 			userdetailInfo.Phone = SqlClientUtility.GetString(dataReader,DbConstants.USER_DETAIL.PHONE, String.Empty);

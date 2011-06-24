@@ -39,7 +39,9 @@ namespace TFM.DAL.Base
 				new SqlParameter("@ticket_type", ticketregistrationInfo.Ticket_type),
 				new SqlParameter("@start_date", ticketregistrationInfo.Start_date),
 				new SqlParameter("@end_date", ticketregistrationInfo.End_date),
-				new SqlParameter("@station", ticketregistrationInfo.Station)
+				new SqlParameter("@station", ticketregistrationInfo.Station),
+				new SqlParameter("@customer", ticketregistrationInfo.Customer),
+				new SqlParameter("@staff", ticketregistrationInfo.Staff)
 			};
 
 			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "ticket_registration_Insert", parameters);
@@ -57,7 +59,9 @@ namespace TFM.DAL.Base
 				new SqlParameter("@ticket_type", ticketregistrationInfo.Ticket_type),
 				new SqlParameter("@start_date", ticketregistrationInfo.Start_date),
 				new SqlParameter("@end_date", ticketregistrationInfo.End_date),
-				new SqlParameter("@station", ticketregistrationInfo.Station)
+				new SqlParameter("@station", ticketregistrationInfo.Station),
+				new SqlParameter("@customer", ticketregistrationInfo.Customer),
+				new SqlParameter("@staff", ticketregistrationInfo.Staff)
 			};
 
 			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "ticket_registration_Update", parameters);
@@ -74,6 +78,19 @@ namespace TFM.DAL.Base
 			};
 
 			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "ticket_registration_Delete", parameters);
+		}
+
+		/// <summary>
+		/// Deletes a record from the ticket_registration table by a foreign key.
+		/// </summary>
+		public virtual void DeleteAllByNumber_plate(string number_plate)
+		{
+			SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@number_plate", number_plate)
+			};
+
+			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "ticket_registration_DeleteAllByNumber_plate", parameters);
 		}
 
 		/// <summary>
@@ -146,6 +163,29 @@ namespace TFM.DAL.Base
 		/// <summary>
 		/// Selects all records from the ticket_registration table by a foreign key.
 		/// </summary>
+		public virtual CHRTList<TicketregistrationInfo> SelectAllByNumber_plate(string number_plate)
+		{
+			SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@number_plate", number_plate)
+			};
+
+			using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "ticket_registration_SelectAllByNumber_plate", parameters))
+			{
+				CHRTList<TicketregistrationInfo> ticketregistrationInfoList = new CHRTList<TicketregistrationInfo>();
+				while (dataReader.Read())
+				{
+					TicketregistrationInfo ticketregistrationInfo = MakeTicketregistrationInfo(dataReader);
+					ticketregistrationInfoList.Add(ticketregistrationInfo);
+				}
+
+				return ticketregistrationInfoList;
+			}
+		}
+
+		/// <summary>
+		/// Selects all records from the ticket_registration table by a foreign key.
+		/// </summary>
 		public virtual CHRTList<TicketregistrationInfo> SelectAllByStation(int station)
 		{
 			SqlParameter[] parameters = new SqlParameter[]
@@ -201,6 +241,8 @@ namespace TFM.DAL.Base
 			ticketregistrationInfo.Start_date = SqlClientUtility.GetInt32(dataReader,DbConstants.TICKET_REGISTRATION.START_DATE, 0);
 			ticketregistrationInfo.End_date = SqlClientUtility.GetInt32(dataReader,DbConstants.TICKET_REGISTRATION.END_DATE, 0);
 			ticketregistrationInfo.Station = SqlClientUtility.GetInt32(dataReader,DbConstants.TICKET_REGISTRATION.STATION, 0);
+			ticketregistrationInfo.Customer = SqlClientUtility.GetString(dataReader,DbConstants.TICKET_REGISTRATION.CUSTOMER, String.Empty);
+			ticketregistrationInfo.Staff = SqlClientUtility.GetString(dataReader,DbConstants.TICKET_REGISTRATION.STAFF, String.Empty);
 
 			return ticketregistrationInfo;
 		}

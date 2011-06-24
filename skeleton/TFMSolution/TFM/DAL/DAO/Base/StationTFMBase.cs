@@ -37,7 +37,8 @@ namespace TFM.DAL.Base
 				new SqlParameter("@stationid", stationInfo.Stationid),
 				new SqlParameter("@name", stationInfo.Name),
 				new SqlParameter("@province", stationInfo.Province),
-				new SqlParameter("@company", stationInfo.Company)
+				new SqlParameter("@company", stationInfo.Company),
+				new SqlParameter("@description", stationInfo.Description)
 			};
 
 			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "station_Insert", parameters);
@@ -53,7 +54,8 @@ namespace TFM.DAL.Base
 				new SqlParameter("@stationid", stationInfo.Stationid),
 				new SqlParameter("@name", stationInfo.Name),
 				new SqlParameter("@province", stationInfo.Province),
-				new SqlParameter("@company", stationInfo.Company)
+				new SqlParameter("@company", stationInfo.Company),
+				new SqlParameter("@description", stationInfo.Description)
 			};
 
 			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "station_Update", parameters);
@@ -123,6 +125,7 @@ namespace TFM.DAL.Base
 			stationInfo.Name = SqlClientUtility.GetString(dataReader,DbConstants.STATION.NAME, String.Empty);
 			stationInfo.Province = SqlClientUtility.GetString(dataReader,DbConstants.STATION.PROVINCE, String.Empty);
 			stationInfo.Company = SqlClientUtility.GetString(dataReader,DbConstants.STATION.COMPANY, String.Empty);
+			stationInfo.Description = SqlClientUtility.GetString(dataReader,DbConstants.STATION.DESCRIPTION, String.Empty);
 
 			return stationInfo;
 		}

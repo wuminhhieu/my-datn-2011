@@ -36,7 +36,10 @@ namespace TFM.DAL.Base
 			{
 				new SqlParameter("@username", usersInfo.Username),
 				new SqlParameter("@password", usersInfo.Password),
-				new SqlParameter("@roleid", usersInfo.Roleid)
+				new SqlParameter("@roleid", usersInfo.Roleid),
+				new SqlParameter("@created_date", usersInfo.Created_date),
+				new SqlParameter("@last_login", usersInfo.Last_login),
+				new SqlParameter("@last_logout", usersInfo.Last_logout)
 			};
 
 			usersInfo.Userid = (int) SqlClientUtility.ExecuteScalar(connectionStringName, CommandType.StoredProcedure, "users_Insert", parameters);
@@ -52,7 +55,10 @@ namespace TFM.DAL.Base
 				new SqlParameter("@userid", usersInfo.Userid),
 				new SqlParameter("@username", usersInfo.Username),
 				new SqlParameter("@password", usersInfo.Password),
-				new SqlParameter("@roleid", usersInfo.Roleid)
+				new SqlParameter("@roleid", usersInfo.Roleid),
+				new SqlParameter("@created_date", usersInfo.Created_date),
+				new SqlParameter("@last_login", usersInfo.Last_login),
+				new SqlParameter("@last_logout", usersInfo.Last_logout)
 			};
 
 			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "users_Update", parameters);
@@ -158,6 +164,9 @@ namespace TFM.DAL.Base
 			usersInfo.Username = SqlClientUtility.GetString(dataReader,DbConstants.USERS.USERNAME, String.Empty);
 			usersInfo.Password = SqlClientUtility.GetString(dataReader,DbConstants.USERS.PASSWORD, String.Empty);
 			usersInfo.Roleid = SqlClientUtility.GetInt32(dataReader,DbConstants.USERS.ROLEID, 0);
+			usersInfo.Created_date = SqlClientUtility.GetInt32(dataReader,DbConstants.USERS.CREATED_DATE, 0);
+			usersInfo.Last_login = SqlClientUtility.GetInt32(dataReader,DbConstants.USERS.LAST_LOGIN, 0);
+			usersInfo.Last_logout = SqlClientUtility.GetInt32(dataReader,DbConstants.USERS.LAST_LOGOUT, 0);
 
 			return usersInfo;
 		}

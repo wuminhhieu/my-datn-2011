@@ -38,7 +38,8 @@ namespace TFM.DAL.Base
 				new SqlParameter("@note", cartypeInfo.Note),
 				new SqlParameter("@weight", cartypeInfo.Weight),
 				new SqlParameter("@seat", cartypeInfo.Seat),
-				new SqlParameter("@capacity", cartypeInfo.Capacity)
+				new SqlParameter("@capacity", cartypeInfo.Capacity),
+				new SqlParameter("@priority_property", cartypeInfo.Priority_property)
 			};
 
 			cartypeInfo.Typeid = (int) SqlClientUtility.ExecuteScalar(connectionStringName, CommandType.StoredProcedure, "car_type_Insert", parameters);
@@ -56,7 +57,8 @@ namespace TFM.DAL.Base
 				new SqlParameter("@note", cartypeInfo.Note),
 				new SqlParameter("@weight", cartypeInfo.Weight),
 				new SqlParameter("@seat", cartypeInfo.Seat),
-				new SqlParameter("@capacity", cartypeInfo.Capacity)
+				new SqlParameter("@capacity", cartypeInfo.Capacity),
+				new SqlParameter("@priority_property", cartypeInfo.Priority_property)
 			};
 
 			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "car_type_Update", parameters);
@@ -128,6 +130,7 @@ namespace TFM.DAL.Base
 			cartypeInfo.Weight = SqlClientUtility.GetString(dataReader,DbConstants.CAR_TYPE.WEIGHT, String.Empty);
 			cartypeInfo.Seat = SqlClientUtility.GetString(dataReader,DbConstants.CAR_TYPE.SEAT, String.Empty);
 			cartypeInfo.Capacity = SqlClientUtility.GetString(dataReader,DbConstants.CAR_TYPE.CAPACITY, String.Empty);
+			cartypeInfo.Priority_property = SqlClientUtility.GetString(dataReader,DbConstants.CAR_TYPE.PRIORITY_PROPERTY, String.Empty);
 
 			return cartypeInfo;
 		}

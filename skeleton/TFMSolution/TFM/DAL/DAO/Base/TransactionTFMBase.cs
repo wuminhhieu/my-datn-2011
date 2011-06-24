@@ -39,7 +39,7 @@ namespace TFM.DAL.Base
 				new SqlParameter("@time", transactionInfo.Time),
 				new SqlParameter("@userid", transactionInfo.Userid),
 				new SqlParameter("@price", transactionInfo.Price),
-				new SqlParameter("@car", transactionInfo.Car),
+				new SqlParameter("@number_plate", transactionInfo.Number_plate),
 				new SqlParameter("@evidence", transactionInfo.Evidence)
 			};
 
@@ -58,7 +58,7 @@ namespace TFM.DAL.Base
 				new SqlParameter("@time", transactionInfo.Time),
 				new SqlParameter("@userid", transactionInfo.Userid),
 				new SqlParameter("@price", transactionInfo.Price),
-				new SqlParameter("@car", transactionInfo.Car),
+				new SqlParameter("@number_plate", transactionInfo.Number_plate),
 				new SqlParameter("@evidence", transactionInfo.Evidence)
 			};
 
@@ -81,14 +81,14 @@ namespace TFM.DAL.Base
 		/// <summary>
 		/// Deletes a record from the transaction table by a foreign key.
 		/// </summary>
-		public virtual void DeleteAllByCar(string car)
+		public virtual void DeleteAllByNumber_plate(string number_plate)
 		{
 			SqlParameter[] parameters = new SqlParameter[]
 			{
-				new SqlParameter("@car", car)
+				new SqlParameter("@number_plate", number_plate)
 			};
 
-			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "transaction_DeleteAllByCar", parameters);
+			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "transaction_DeleteAllByNumber_plate", parameters);
 		}
 
 		/// <summary>
@@ -174,14 +174,14 @@ namespace TFM.DAL.Base
 		/// <summary>
 		/// Selects all records from the transaction table by a foreign key.
 		/// </summary>
-		public virtual CHRTList<TransactionInfo> SelectAllByCar(string car)
+		public virtual CHRTList<TransactionInfo> SelectAllByNumber_plate(string number_plate)
 		{
 			SqlParameter[] parameters = new SqlParameter[]
 			{
-				new SqlParameter("@car", car)
+				new SqlParameter("@number_plate", number_plate)
 			};
 
-			using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "transaction_SelectAllByCar", parameters))
+			using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "transaction_SelectAllByNumber_plate", parameters))
 			{
 				CHRTList<TransactionInfo> transactionInfoList = new CHRTList<TransactionInfo>();
 				while (dataReader.Read())
@@ -274,7 +274,7 @@ namespace TFM.DAL.Base
 			transactionInfo.Time = SqlClientUtility.GetInt32(dataReader,DbConstants.TRANSACTION.TIME, 0);
 			transactionInfo.Userid = SqlClientUtility.GetInt32(dataReader,DbConstants.TRANSACTION.USERID, 0);
 			transactionInfo.Price = SqlClientUtility.GetString(dataReader,DbConstants.TRANSACTION.PRICE, String.Empty);
-			transactionInfo.Car = SqlClientUtility.GetString(dataReader,DbConstants.TRANSACTION.CAR, String.Empty);
+			transactionInfo.Number_plate = SqlClientUtility.GetString(dataReader,DbConstants.TRANSACTION.NUMBER_PLATE, String.Empty);
 			transactionInfo.Evidence = SqlClientUtility.GetInt32(dataReader,DbConstants.TRANSACTION.EVIDENCE, 0);
 
 			return transactionInfo;
