@@ -29,14 +29,15 @@ namespace OperationCtrl
 
         #region public member
 
-        public PriceList currentPriceList;
+        
 
         #endregion
 
-        public void DisplayCurrentPriceList(PriceList currentPriceList) 
+        public void DisplayCurrentPriceList() 
         {
             //label1.Text = currentPriceList.priceList.Price;
             //label2.Text = currentPriceList.priceList.Station.ToString();
+           // PNRSData;
         }
 
         public GetUpdatePriceListCtrl()
@@ -52,7 +53,6 @@ namespace OperationCtrl
 
         private void button1_Click1(object sender, EventArgs e)
         {
-            PNRSData.PNRSDataObj.pricelis = "abc";
             //currentPriceList.GetUpdatePriceList();
             //label1.Text = currentPriceList.priceList.Station.ToString();
             //label2.Text = currentPriceList.priceList.Price;

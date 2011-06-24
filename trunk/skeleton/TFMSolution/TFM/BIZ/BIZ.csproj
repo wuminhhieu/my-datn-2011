@@ -40,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\PriceList.cs" />
-    <Compile Include="Controllers\SeachController.cs" />
+    <Compile Include="BusinessLogic\PriceList.cs" />
+    <Compile Include="BusinessLogic\SeachController.cs" />
     <Compile Include="Implements\CargroupsService.cs" />
     <Compile Include="Implements\CarService.cs" />
     <Compile Include="Implements\CartypeService.cs" />
@@ -71,6 +71,10 @@
     <Compile Include="Services\IUsersService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\PNRSUtilities\PNRSUtilities.csproj">
+      <Project>{067A4C60-296A-4204-A610-EE137272BB1A}</Project>
+      <Name>PNRSUtilities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{03EDAB82-4E27-4522-9DC0-0010B7087A3C}</Project>
       <Name>Common</Name>

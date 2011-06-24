@@ -90,7 +90,7 @@ namespace PNRSCtrl
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label2.Text = PNRSUtilities.PNRSData.PNRSDataObj.pricelis;
+            //label2.Text = PNRSUtilities.PNRSData.PNRSDataObj.pricelis;
         }
     }
 }
