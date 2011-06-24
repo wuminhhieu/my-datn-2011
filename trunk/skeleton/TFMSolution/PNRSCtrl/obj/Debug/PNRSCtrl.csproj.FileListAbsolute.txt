@@ -21,3 +21,12 @@ E:\DATN\skeleton\TFMSolution\PNRSCtrl\obj\Debug\PNRSCtrl.exe
 E:\DATN\skeleton\TFMSolution\PNRSCtrl\obj\Debug\PNRSCtrl.pdb
 E:\DATN\skeleton\TFMSolution\PNRSCtrl\obj\Debug\PNRSCtrl.frmPNRSView.resources
 E:\DATN\skeleton\TFMSolution\PNRSCtrl\obj\Debug\PNRSCtrl.LoginCtrl.resources
+E:\DATN\skeleton\TFMSolution\PNRSCtrl\bin\Debug\PNRSCtrl.exe.config
+E:\DATN\skeleton\TFMSolution\PNRSCtrl\bin\Debug\BIZ.dll
+E:\DATN\skeleton\TFMSolution\PNRSCtrl\bin\Debug\Common.dll
+E:\DATN\skeleton\TFMSolution\PNRSCtrl\bin\Debug\DAL.dll
+E:\DATN\skeleton\TFMSolution\PNRSCtrl\bin\Debug\BIZ.pdb
+E:\DATN\skeleton\TFMSolution\PNRSCtrl\bin\Debug\Common.pdb
+E:\DATN\skeleton\TFMSolution\PNRSCtrl\bin\Debug\DAL.pdb
+E:\DATN\skeleton\TFMSolution\PNRSCtrl\obj\Debug\GenerateResource.read.1.tlog
+E:\DATN\skeleton\TFMSolution\PNRSCtrl\obj\Debug\GenerateResource.write.1.tlog
