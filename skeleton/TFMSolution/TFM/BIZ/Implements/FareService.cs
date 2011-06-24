@@ -5,6 +5,7 @@ using TFM.DAL;
 using TFM.Common.Models;
 using TFM.Biz.Services;
 
+
 namespace TFM.Biz.Implements
 {
 	public class FareService: IFareService
@@ -37,7 +38,6 @@ namespace TFM.Biz.Implements
 			}
 			catch (Exception ex)
 			{
-                //Log error by TFM framwork here
 				//Provider.Log.Error(ex, "TFM.Biz.Implements.Fare - Update" + ex.Message);
 				throw;
 			}
@@ -73,6 +73,23 @@ namespace TFM.Biz.Implements
 			catch (Exception ex)
 			{
 				//Provider.Log.Error(ex, "TFM.Biz.Implements.Fare - DeleteAllByCar_group" + ex.Message);
+				throw;
+			}
+
+		}
+
+		/// <summary>
+		/// Deletes all records from the fare table by foreign key value.
+		/// </summary>
+		public void DeleteAllByStation(int station)
+		{
+			try
+			{
+				new FareTFM().DeleteAllByStation(station);
+			}
+			catch (Exception ex)
+			{
+				//Provider.Log.Error(ex, "TFM.Biz.Implements.Fare - DeleteAllByStation" + ex.Message);
 				throw;
 			}
 
@@ -141,6 +158,23 @@ namespace TFM.Biz.Implements
 			catch (Exception ex)
 			{
 				//Provider.Log.Error(ex, "TFM.Biz.Implements.Fare - SelectAllByCar_group()" + ex.Message);
+				throw;
+			}
+
+		}
+
+		/// <summary>
+		/// Selects all records from the fare table.
+		/// </summary>
+		public CHRTList<FareInfo> SelectAllByStation(int station)
+		{
+			try
+			{
+				return new FareTFM().SelectAllByStation(station);
+			}
+			catch (Exception ex)
+			{
+				//Provider.Log.Error(ex, "TFM.Biz.Implements.Fare - SelectAllByStation()" + ex.Message);
 				throw;
 			}
 
