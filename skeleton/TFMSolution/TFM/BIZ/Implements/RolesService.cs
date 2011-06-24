@@ -72,7 +72,6 @@ namespace TFM.Biz.Implements
 			}
 			catch (Exception ex)
 			{
-                //Log error by TFM framwork here
 				//Provider.Log.Error(ex, "TFM.Biz.Implements.Roles - Select" + ex.Message);
 				throw;
 			}

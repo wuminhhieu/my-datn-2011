@@ -5,6 +5,7 @@ using TFM.DAL;
 using TFM.Common.Models;
 using TFM.Biz.Services;
 
+
 namespace TFM.Biz.Implements
 {
 	public class TransactionService: ITransactionService
@@ -20,7 +21,6 @@ namespace TFM.Biz.Implements
 			}
 			catch (Exception ex)
 			{
-                //Log error by TFM framwork here
 				//Provider.Log.Error(ex, "TFM.Biz.Implements.Transaction - Insert" + ex.Message);
 				throw;
 			}
@@ -64,15 +64,15 @@ namespace TFM.Biz.Implements
 		/// <summary>
 		/// Deletes all records from the transaction table by foreign key value.
 		/// </summary>
-		public void DeleteAllByCar(string car)
+		public void DeleteAllByNumber_plate(string number_plate)
 		{
 			try
 			{
-				new TransactionTFM().DeleteAllByCar(car);
+				new TransactionTFM().DeleteAllByNumber_plate(number_plate);
 			}
 			catch (Exception ex)
 			{
-				//Provider.Log.Error(ex, "TFM.Biz.Implements.Transaction - DeleteAllByCar" + ex.Message);
+				//Provider.Log.Error(ex, "TFM.Biz.Implements.Transaction - DeleteAllByNumber_plate" + ex.Message);
 				throw;
 			}
 
@@ -166,15 +166,15 @@ namespace TFM.Biz.Implements
 		/// <summary>
 		/// Selects all records from the transaction table.
 		/// </summary>
-		public CHRTList<TransactionInfo> SelectAllByCar(string car)
+		public CHRTList<TransactionInfo> SelectAllByNumber_plate(string number_plate)
 		{
 			try
 			{
-				return new TransactionTFM().SelectAllByCar(car);
+				return new TransactionTFM().SelectAllByNumber_plate(number_plate);
 			}
 			catch (Exception ex)
 			{
-				//Provider.Log.Error(ex, "TFM.Biz.Implements.Transaction - SelectAllByCar()" + ex.Message);
+				//Provider.Log.Error(ex, "TFM.Biz.Implements.Transaction - SelectAllByNumber_plate()" + ex.Message);
 				throw;
 			}
 

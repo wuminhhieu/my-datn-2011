@@ -21,7 +21,6 @@ namespace TFM.Biz.Implements
 			}
 			catch (Exception ex)
 			{
-                //Log error by TFM framwork here
 				//Provider.Log.Error(ex, "TFM.Biz.Implements.Cartype - Insert" + ex.Message);
 				throw;
 			}

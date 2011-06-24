@@ -5,6 +5,7 @@ using TFM.DAL;
 using TFM.Common.Models;
 using TFM.Biz.Services;
 
+
 namespace TFM.Biz.Implements
 {
 	public class EvidenceService: IEvidenceService
@@ -20,7 +21,6 @@ namespace TFM.Biz.Implements
 			}
 			catch (Exception ex)
 			{
-                //Log error by TFM framwork here
 				//Provider.Log.Error(ex, "TFM.Biz.Implements.Evidence - Insert" + ex.Message);
 				throw;
 			}
