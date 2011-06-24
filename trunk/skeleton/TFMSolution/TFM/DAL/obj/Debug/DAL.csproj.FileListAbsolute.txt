@@ -6,11 +6,3 @@ C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\DAL\bin\Debug\Comm
 C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\DAL\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\DAL\obj\Debug\DAL.dll
 C:\Users\TonyHieu\documents\visual studio 2010\Projects\WebUI\DAL\obj\Debug\DAL.pdb
-E:\DATN\skeleton\TFMSolution\TFM\DAL\bin\Debug\DAL.dll.config
-E:\DATN\skeleton\TFMSolution\TFM\DAL\bin\Debug\DAL.dll
-E:\DATN\skeleton\TFMSolution\TFM\DAL\bin\Debug\DAL.pdb
-E:\DATN\skeleton\TFMSolution\TFM\DAL\bin\Debug\Common.dll
-E:\DATN\skeleton\TFMSolution\TFM\DAL\bin\Debug\Common.pdb
-E:\DATN\skeleton\TFMSolution\TFM\DAL\obj\Debug\ResolveAssemblyReference.cache
-E:\DATN\skeleton\TFMSolution\TFM\DAL\obj\Debug\DAL.dll
-E:\DATN\skeleton\TFMSolution\TFM\DAL\obj\Debug\DAL.pdb

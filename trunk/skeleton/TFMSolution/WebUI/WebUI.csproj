@@ -109,6 +109,20 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TFM\BIZ\BIZ.csproj">
+      <Project>{03A3A7D4-5DEE-416B-B141-7F744C9C39FA}</Project>
+      <Name>BIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TFM\Common\Common.csproj">
+      <Project>{479D123C-604C-4584-A643-307A0F930303}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TFM\DAL\DAL.csproj">
+      <Project>{1D1CDFD6-954E-4D8A-8ABD-5E67A49D34EB}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
