@@ -25,6 +25,11 @@ namespace TFM.Biz.Services
 		/// <summary>
 		/// Deletes all records from the ticket_registration table by foreign key value.
 		/// </summary>
+		void DeleteAllByNumber_plate(string number_plate);
+
+		/// <summary>
+		/// Deletes all records from the ticket_registration table by foreign key value.
+		/// </summary>
 		void DeleteAllByStation(int station);
 
 		/// <summary>
@@ -41,6 +46,11 @@ namespace TFM.Biz.Services
 		/// Selects all records from the ticket_registration table.
 		/// </summary>
 		CHRTList<TicketregistrationInfo> SelectAll();
+
+		/// <summary>
+		/// Selects all records from the ticket_registration table by foreign key value.
+		/// </summary>
+		CHRTList<TicketregistrationInfo> SelectAllByNumber_plate(string number_plate);
 
 		/// <summary>
 		/// Selects all records from the ticket_registration table by foreign key value.

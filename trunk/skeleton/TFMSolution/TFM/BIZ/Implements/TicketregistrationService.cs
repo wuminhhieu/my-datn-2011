@@ -21,7 +21,6 @@ namespace TFM.Biz.Implements
 			}
 			catch (Exception ex)
 			{
-                //Log error by TFM framwork here
 				//Provider.Log.Error(ex, "TFM.Biz.Implements.Ticketregistration - Insert" + ex.Message);
 				throw;
 			}
@@ -57,6 +56,23 @@ namespace TFM.Biz.Implements
 			catch (Exception ex)
 			{
 				//Provider.Log.Error(ex, "TFM.Biz.Implements.Ticketregistration - Delete" + ex.Message);
+				throw;
+			}
+
+		}
+
+		/// <summary>
+		/// Deletes all records from the ticket_registration table by foreign key value.
+		/// </summary>
+		public void DeleteAllByNumber_plate(string number_plate)
+		{
+			try
+			{
+				new TicketregistrationTFM().DeleteAllByNumber_plate(number_plate);
+			}
+			catch (Exception ex)
+			{
+				//Provider.Log.Error(ex, "TFM.Biz.Implements.Ticketregistration - DeleteAllByNumber_plate" + ex.Message);
 				throw;
 			}
 
@@ -125,6 +141,23 @@ namespace TFM.Biz.Implements
 			catch (Exception ex)
 			{
 				//Provider.Log.Error(ex, "TFM.Biz.Implements.Ticketregistration - SelectAll" + ex.Message);
+				throw;
+			}
+
+		}
+
+		/// <summary>
+		/// Selects all records from the ticket_registration table.
+		/// </summary>
+		public CHRTList<TicketregistrationInfo> SelectAllByNumber_plate(string number_plate)
+		{
+			try
+			{
+				return new TicketregistrationTFM().SelectAllByNumber_plate(number_plate);
+			}
+			catch (Exception ex)
+			{
+				//Provider.Log.Error(ex, "TFM.Biz.Implements.Ticketregistration - SelectAllByNumber_plate()" + ex.Message);
 				throw;
 			}
 

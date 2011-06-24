@@ -30,6 +30,11 @@ namespace TFM.Biz.Services
 		/// <summary>
 		/// Deletes all records from the fare table by foreign key value.
 		/// </summary>
+		void DeleteAllByStation(int station);
+
+		/// <summary>
+		/// Deletes all records from the fare table by foreign key value.
+		/// </summary>
 		void DeleteAllByTicket_type(int ticket_type);
 
 		/// <summary>
@@ -46,6 +51,11 @@ namespace TFM.Biz.Services
 		/// Selects all records from the fare table by foreign key value.
 		/// </summary>
 		CHRTList<FareInfo> SelectAllByCar_group(int car_group);
+
+		/// <summary>
+		/// Selects all records from the fare table by foreign key value.
+		/// </summary>
+		CHRTList<FareInfo> SelectAllByStation(int station);
 
 		/// <summary>
 		/// Selects all records from the fare table by foreign key value.

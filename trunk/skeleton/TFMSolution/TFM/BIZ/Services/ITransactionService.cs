@@ -25,7 +25,7 @@ namespace TFM.Biz.Services
 		/// <summary>
 		/// Deletes all records from the transaction table by foreign key value.
 		/// </summary>
-		void DeleteAllByCar(string car);
+		void DeleteAllByNumber_plate(string number_plate);
 
 		/// <summary>
 		/// Deletes all records from the transaction table by foreign key value.
@@ -55,7 +55,7 @@ namespace TFM.Biz.Services
 		/// <summary>
 		/// Selects all records from the transaction table by foreign key value.
 		/// </summary>
-		CHRTList<TransactionInfo> SelectAllByCar(string car);
+		CHRTList<TransactionInfo> SelectAllByNumber_plate(string number_plate);
 
 		/// <summary>
 		/// Selects all records from the transaction table by foreign key value.
