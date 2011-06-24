@@ -95,6 +95,19 @@ namespace TFM.DAL.Base
 		/// <summary>
 		/// Deletes a record from the fare table by a foreign key.
 		/// </summary>
+		public virtual void DeleteAllByStation(int station)
+		{
+			SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@station", station)
+			};
+
+			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "fare_DeleteAllByStation", parameters);
+		}
+
+		/// <summary>
+		/// Deletes a record from the fare table by a foreign key.
+		/// </summary>
 		public virtual void DeleteAllByTicket_type(int ticket_type)
 		{
 			SqlParameter[] parameters = new SqlParameter[]
@@ -172,6 +185,29 @@ namespace TFM.DAL.Base
 		/// <summary>
 		/// Selects all records from the fare table by a foreign key.
 		/// </summary>
+		public virtual CHRTList<FareInfo> SelectAllByStation(int station)
+		{
+			SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@station", station)
+			};
+
+			using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "fare_SelectAllByStation", parameters))
+			{
+				CHRTList<FareInfo> fareInfoList = new CHRTList<FareInfo>();
+				while (dataReader.Read())
+				{
+					FareInfo fareInfo = MakeFareInfo(dataReader);
+					fareInfoList.Add(fareInfo);
+				}
+
+				return fareInfoList;
+			}
+		}
+
+		/// <summary>
+		/// Selects all records from the fare table by a foreign key.
+		/// </summary>
 		public virtual CHRTList<FareInfo> SelectAllByTicket_type(int ticket_type)
 		{
 			SqlParameter[] parameters = new SqlParameter[]
@@ -202,7 +238,7 @@ namespace TFM.DAL.Base
 			fareInfo.Car_group = SqlClientUtility.GetInt32(dataReader,DbConstants.FARE.CAR_GROUP, 0);
 			fareInfo.Ticket_type = SqlClientUtility.GetInt32(dataReader,DbConstants.FARE.TICKET_TYPE, 0);
 			fareInfo.Station = SqlClientUtility.GetInt32(dataReader,DbConstants.FARE.STATION, 0);
-			fareInfo.Price = SqlClientUtility.GetString(dataReader,DbConstants.FARE.PRICE, String.Empty);
+			fareInfo.Price = SqlClientUtility.GetInt32(dataReader,DbConstants.FARE.PRICE, 0);
 			fareInfo.Apply_date = SqlClientUtility.GetInt32(dataReader,DbConstants.FARE.APPLY_DATE, 0);
 			fareInfo.Created_date = SqlClientUtility.GetInt32(dataReader,DbConstants.FARE.CREATED_DATE, 0);
 			fareInfo.Is_active = SqlClientUtility.GetInt32(dataReader,DbConstants.FARE.IS_ACTIVE, 0);

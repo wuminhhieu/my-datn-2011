@@ -35,7 +35,8 @@ namespace TFM.DAL.Base
 			SqlParameter[] parameters = new SqlParameter[]
 			{
 				new SqlParameter("@name", tickettypeInfo.Name),
-				new SqlParameter("@created_date", tickettypeInfo.Created_date)
+				new SqlParameter("@created_date", tickettypeInfo.Created_date),
+				new SqlParameter("@description", tickettypeInfo.Description)
 			};
 
 			tickettypeInfo.Ticket_type_id = (int) SqlClientUtility.ExecuteScalar(connectionStringName, CommandType.StoredProcedure, "ticket_type_Insert", parameters);
@@ -50,7 +51,8 @@ namespace TFM.DAL.Base
 			{
 				new SqlParameter("@ticket_type_id", tickettypeInfo.Ticket_type_id),
 				new SqlParameter("@name", tickettypeInfo.Name),
-				new SqlParameter("@created_date", tickettypeInfo.Created_date)
+				new SqlParameter("@created_date", tickettypeInfo.Created_date),
+				new SqlParameter("@description", tickettypeInfo.Description)
 			};
 
 			SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "ticket_type_Update", parameters);
@@ -119,6 +121,7 @@ namespace TFM.DAL.Base
 			tickettypeInfo.Ticket_type_id = SqlClientUtility.GetInt32(dataReader,DbConstants.TICKET_TYPE.TICKET_TYPE_ID, 0);
 			tickettypeInfo.Name = SqlClientUtility.GetString(dataReader,DbConstants.TICKET_TYPE.NAME, String.Empty);
 			tickettypeInfo.Created_date = SqlClientUtility.GetInt32(dataReader,DbConstants.TICKET_TYPE.CREATED_DATE, 0);
+			tickettypeInfo.Description = SqlClientUtility.GetString(dataReader,DbConstants.TICKET_TYPE.DESCRIPTION, String.Empty);
 
 			return tickettypeInfo;
 		}
