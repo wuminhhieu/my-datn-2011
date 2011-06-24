@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{928E99F1-4126-41A2-8DB5-F4349C4994CB}</ProjectGuid>
+    <ProjectGuid>{03A3A7D4-5DEE-416B-B141-7F744C9C39FA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BIZ</RootNamespace>
@@ -40,8 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLogic\PriceList.cs" />
-    <Compile Include="BusinessLogic\SeachController.cs" />
     <Compile Include="Implements\CargroupsService.cs" />
     <Compile Include="Implements\CarService.cs" />
     <Compile Include="Implements\CartypeService.cs" />
